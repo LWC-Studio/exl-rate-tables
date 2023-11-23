@@ -1,0 +1,1438 @@
+<template>
+	<div class="slds-table_edit_container slds-is-relative slds-scrollable_x">
+		<table aria-multiselectable="true"
+			class="slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols"
+			role="grid" style="width:66.75rem;margin-left: auto;margin-right: auto;border: 1px solid lightgray;"
+			aria-label="Example default inline edit table with cell focused">
+			<thead>
+				<tr class="slds-line-height_reset">
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable sticky-col1" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Line of Business</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable sticky-col2" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Resource Delivery Location</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">EXL Resources/<br>Contractors</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Monthly Contractor cost - Local  Currency </span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Resource Band/Designation</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Internal Role Name</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:9.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Client Facing Role Name</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Approved Rates in USD</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Proposed Rate in USD</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">MSA  Volume Discount  %, If any</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Effective Proposed rate  post MSA discount</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Discount % from Approved rates</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Resource Count</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Duration - Per Resource-Monthly</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Total Resource Charges at  Approved Rates</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Total Resource Charges at  Effective Rates</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">GM% @ Effective Rates </span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit sticky-col1" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>Domain</option>
+									<option>FRAC</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit sticky-col2" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>India</option>
+									<option>US</option>
+									<option>UK</option>
+									<option>AUS</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>EXL Resource</option>
+									<option>Contractor</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="N.A" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>A1</option>
+									<option>A2</option>
+									<option>B1</option>
+									<option>B2</option>
+									<option>C1</option>
+									<option>C2</option>
+									<option>D1</option>
+									<option>D2</option>
+									<option>E1</option>
+									<option selected>E2</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="Partner" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="Project Lead" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="8,853.7" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="9,000.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="10.0%" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="8,100.0" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="8.5%" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="1" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="4" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="35,415" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="32,400" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="1.10%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit sticky-col1" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>Domain</option>
+									<option>FRAC</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit sticky-col2" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>India</option>
+									<option>US</option>
+									<option>UK</option>
+									<option>AUS</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>EXL Resource</option>
+									<option>Contractor</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="N.A" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>A1</option>
+									<option>A2</option>
+									<option>B1</option>
+									<option>B2</option>
+									<option>C1</option>
+									<option>C2</option>
+									<option selected>D1</option>
+									<option>D2</option>
+									<option>E1</option>
+									<option>E2</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" disabled="">Engagement&#10;Manager</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="Vertical Head" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="10,322.1" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="10,500.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="25.0%" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="7,875.0" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="23.7%" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="2" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="24" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="495,460" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="378,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="33.8%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit sticky-col1" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>Domain</option>
+									<option>FRAC</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit sticky-col2" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>India</option>
+									<option>US</option>
+									<option>UK</option>
+									<option>AUS</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>EXL Resource</option>
+									<option>Contractor</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="N.A" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>A1</option>
+									<option>A2</option>
+									<option>B1</option>
+									<option>B2</option>
+									<option>C1</option>
+									<option selected>C2</option>
+									<option>D1</option>
+									<option>D2</option>
+									<option>E1</option>
+									<option>E2</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" disabled="">Senior Consultant</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" rows="2">Senior Business Analyst</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="7,733.5" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="8,000.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="15.0%" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="6,800.0" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="12.1%" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="10.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="18.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="1,392,030" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="1,224,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="40.9%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit sticky-col1" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>Domain</option>
+									<option>FRAC</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit sticky-col2" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>India</option>
+									<option>US</option>
+									<option>UK</option>
+									<option selected>AUS</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>EXL Resource</option>
+									<option>Contractor</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="N.A" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>A1</option>
+									<option>A2</option>
+									<option>B1</option>
+									<option selected>B2</option>
+									<option>C1</option>
+									<option>C2</option>
+									<option>D1</option>
+									<option>D2</option>
+									<option>E1</option>
+									<option>E2</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<input type="text" required="" class="slds-input" value="Consultant" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<input type="text" required="" class="slds-input" value="Business Analyst" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="799.2" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="850.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="25.0%" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="637.5" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="20.2%" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="20.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="24.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="383,601" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="306,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="19.1%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit sticky-col1" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>Domain</option>
+									<option>FRAC</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit sticky-col2" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>India</option>
+									<option>US</option>
+									<option selected>UK</option>
+									<option>AUS</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>EXL Resource</option>
+									<option>Contractor</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="N.A" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>A1</option>
+									<option>A2</option>
+									<option>B1</option>
+									<option>B2</option>
+									<option>C1</option>
+									<option>C2</option>
+									<option selected>D1</option>
+									<option>D2</option>
+									<option>E1</option>
+									<option>E2</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" disabled="">Engagement Manager</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<input type="text" required="" class="slds-input" value="Project Manager" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="19,633.0" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="22,000.0" data-table="1" onchange={inputChanged}/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="30.0%" data-table="1" onchange={inputChanged}/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-effective" value="15,400.0" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-discount" value="21.6%" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="1.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="12.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="235,596" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-resource" value="184,800" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input c-gm" value="31.8%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit sticky-col1" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>Domain</option>
+									<option>FRAC</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit sticky-col2" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <select class="slds-select">
+									<option>India</option>
+									<option>US</option>
+									<option selected>UK</option>
+									<option>AUS</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option>EXL Resource</option>
+									<option>Contractor</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="N.A" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<select class="slds-select">
+									<option selected>A1</option>
+									<option>A2</option>
+									<option>B1</option>
+									<option>B2</option>
+									<option>C1</option>
+									<option>C2</option>
+									<option>D1</option>
+									<option>D2</option>
+									<option>E1</option>
+									<option>E2</option>
+								</select>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" disabled="">Associate Consultant</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<input type="text" required="" class="slds-input" value="Junior Associate" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="14,151.8" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="15,000.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="20.0%" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="12,000.0" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="15.2%" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="30.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="24.0" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="10,189,318" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="8,640,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="64.5%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr class="slds-line-height_reset">
+					<td colspan="2" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable sticky-col1"
+						scope="col" style="width: 8.75rem;border-right: none;background-color: #fafaf9;">
+						<div class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Total Resource Charges -A</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="5" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name"></span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">8816.8</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center c-f-proposed" title="Name">9315.8</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name"></span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center c-f-effective" title="Name">7,455.1</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center c-f-discount" title="Name">15.4%</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">64</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name"></span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">12731419.4</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center c-f-total" title="Name">10765200.0</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">58.7%</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<hr>
+
+	<div class="slds-table_edit_container slds-is-relative slds-scrollable_x">
+		<table aria-multiselectable="true"
+			class="slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols"
+			role="grid" style="width:66.75rem;margin-left: auto;margin-right: auto;border: 1px solid lightgray;"
+			aria-label="Example default inline edit table with cell focused">
+			<thead>
+				<tr class="slds-line-height_reset">
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Other Costs</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Nature/Description of costs</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Charges to Client before MSA discount</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">MSA Volume Discount %, If any</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Cost to EXL</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Net charges to customer ( post MSA discount)</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Deal GM%</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <label class="slds-form-element__label">Pass- Through Cost</label>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+								<textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" rows="2">Pass-Through Cost</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="500,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="5.00%" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="450,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="475,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="5%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <label class="slds-form-element__label">Other Cost</label>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="Admin Cost" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="2,500,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="0.05" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="2,000,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="2,375,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="16%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <label class="slds-form-element__label">Other Cost</label>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="Assets Cost" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="1,000,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="0.05" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="800,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="950,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="16%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <label class="slds-form-element__label">Other Cost</label>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+						<textarea style="line-height: 1.2rem;resize: none;" type="text" required="" class="slds-input" data-table="1" rows="2">Miscellaneous Cost</textarea>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="700,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="0.05" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="500,000" data-table="1"/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="665,000" data-table="1" disabled=""/>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell">
+						<span class="slds-grid slds-grid_align-spread">
+                <input type="text" required="" class="slds-input" value="25%" data-table="1" disabled=""/>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr class="slds-line-height_reset">
+					<td colspan="4" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset" href="#" role="button" tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Total Other Costs -B</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">3750000</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">4465000</span>
+							</div>
+						</div>
+					</td>
+					<td colspan="1" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div style="justify-content: center;" class="slds-th__action slds-text-link_reset" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">16%</span>
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+
+	<hr>
+
+	<div class="slds-table_edit_container slds-is-relative slds-scrollable_x">
+		<table aria-multiselectable="true"
+			class="slds-table slds-no-cell-focus slds-table_bordered slds-table_edit slds-table_fixed-layout slds-table_resizable-cols"
+			role="grid" style="width:66.75rem;margin-left: auto;margin-right: auto;border: 1px solid lightgray;"
+			aria-label="Example default inline edit table with cell focused">
+			<thead>
+				<tr class="slds-line-height_reset">
+					<th rowspan="2" aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Total (A + B)</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Deal TCV before MSA Volume Discount</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Deal TCV Post MSA Volume Discount</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+					<th aria-label="Name" aria-sort="none" class="slds-is-resizable slds-is-sortable" scope="col"
+						style="width:8.75rem">
+						<div class="slds-th__action slds-text-link_reset c-table-header-padding" href="#" role="button"
+							tabindex="-1">
+							<div class="slds-grid slds-grid_vertical-align-center">
+								<span class="c-text-center" title="Name">Deal GM%</span>
+							</div>
+						</div>
+						<div class="slds-resizable">
+							<span class="slds-resizable__handle">
+                  <span class="slds-resizable__divider"></span>
+							</span>
+						</div>
+					</th>
+				</tr>
+				<tr aria-selected="false" class="slds-hint-parent">
+					<td class="slds-cell-edit" role="gridcell"
+						style="border-top: 1px solid lightgray;border-right: 1px solid lightgray;">
+						<span class="slds-grid slds-grid_align-spread" style="justify-content: center;">
+                <label class="slds-form-element__label">4700900</label>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell"
+						style="border-top: 1px solid lightgray;border-right: 1px solid lightgray;">
+						<span class="slds-grid slds-grid_align-spread" style="justify-content: center;">
+                <label class="slds-form-element__label">4465900</label>
+						</span>
+					</td>
+					<td class="slds-cell-edit" role="gridcell"
+						style="border-top: 1px solid lightgray;border-right: 1px solid lightgray;">
+						<span class="slds-grid slds-grid_align-spread" style="justify-content: center;">
+                <label class="slds-form-element__label">16.00%</label>
+						</span>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+	</div>
+
+	<hr>
+
+	<div class="slds-card">
+		<div class="slds-text-longform">
+			<h3 class="slds-text-title_bold slds-p-horizontal_small slds-p-top_small" style="font-size: 1rem;">
+				Key Notes/Assumptions:</h3>
+			<ol class="slds-p-horizontal_small">
+				<li>YoY COLA shall be applicable starting 1st January 2022 and every year there on. COLA: 3.5% p.a. for India,
+					2.5%
+					p.a. for US, UK and Australia delivery location.</li>
+				<li>Annual Rate considers 1840 available hours in a year, accordingly monthly rates are prorated by dividing
+					annual
+					hours by 12.</li>
+				<li>Taxes are not included in the rates and will be applicable over and above.</li>
+				<li>Standard/Basic technology cost is baked in rates, in case any specific technology/tool is required, please
+					put
+					in other cost placeholder.</li>
+				<li>Client SOW/Contract will contain standard approved rates and discount if any from there, unless we proposing
+					higher rates than approved rates.</li>
+				<li>Monthly Contractor cost includes total cost payable to contractor for resource and to be provided in local
+					currency based on resource delivery location.</li>
+				<li>MSA Volume Discount, if any, has to be put as positive percentage in Column M.</li>
+				<li>FRAC India rates has been used for Emerging ESO band E1 ( Director) and E2 ( Partner).</li>
+			</ol>
+		</div>
+	</div>
+
+</template>

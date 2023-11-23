@@ -1,0 +1,51 @@
+.slds-visual-picker_vertical .slds-visual-picker__figure {
+    height: unset;
+}
+
+.slds-modal__content {overflow-y: hidden;}
+
+thead th .slds-grid {
+    justify-content: center;
+}
+
+.slds-input {
+    text-align: center;
+}
+
+.c-text-center {
+    text-align: center;
+    white-space: break-spaces;
+}
+
+.c-table-header-padding {
+    padding: 2.25rem .5rem;
+    justify-content: center;
+}
+
+tfoot {
+        background-color: #fafaf9;
+    color: #514f4d;
+    font-weight: 700;
+}
+
+tfoot td {
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    text-align: center;
+}
+
+.sticky-col1 {
+    left: 0;
+    position: sticky;
+    top: auto;
+    z-index: 99999;
+    background-color: #fff;
+}
+
+.sticky-col2 {
+    left: 140px;
+    position: sticky;
+    top: auto;
+    z-index: 99999;
+    background-color: #fff;
+}
